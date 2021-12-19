@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": [
+      "es2016"
+    ],
+    "declaration": true,
+    "sourceMap": true
+  },
+  "include": [
+    "index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "index.test.ts"
+  ]
+}

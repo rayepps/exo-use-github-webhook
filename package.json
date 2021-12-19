@@ -1,0 +1,33 @@
+{
+  "name": "exo-use-github-webhook",
+  "version": "0.0.1",
+  "description": "Exobase hook that will verify, validate, and parse incoming webhook request from GitHub",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "rayepps",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "check": "yarn lint && yarn test && yarn build",
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "npm:publish": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/jest": "^27.0.1",
+    "chai": "^4.3.4",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "tslint": "^6.0.0",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@exobase/core": "^0.0.4",
+    "@octokit/webhooks-methods": "^2.0.0",
+    "radash": "^1.1.0"
+  }
+}
